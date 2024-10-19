@@ -4,6 +4,26 @@
   padding: 0;
 }
 
+body {
+  text-align: center;
+  background-color: #f2ece4;
+}
+
+h1 {
+  padding: 1rem 2rem 4rem;
+}
+
 .container {
-  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 500px;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.grid {
+  border: 1px solid black;
+  flex: 1 6%;
 }
