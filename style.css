@@ -5,12 +5,14 @@
 }
 
 body {
+  font-family: "Arial", sans-serif;
   text-align: center;
   background-color: #f2ece4;
 }
 
 h1 {
-  padding: 1rem 2rem 4rem;
+  font-size: 3rem;
+  padding: 2rem 2rem;
 }
 
 .container {
@@ -20,10 +22,21 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 1px solid black;
+  border: 3px solid #000;
 }
 
-.grid {
-  border: 1px solid black;
+.cell {
   flex: 1 6%;
+}
+.cell-border {
+  border: 1px solid #1e1e1e;
+}
+
+button {
+  margin-bottom: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.color {
+  background-color: #000;
 }
