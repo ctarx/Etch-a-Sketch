@@ -17,16 +17,17 @@ h1 {
 
 .container {
   margin: 0 auto;
-  max-width: 500px;
-  min-height: 500px;
+  width: 500px;
+  height: 500px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   border: 3px solid #000;
+  background-color: #fff;
 }
 
 .cell {
-  flex: 1 6%;
+  /* (.container size - border (3px*2)) / grid size */
+  height: calc((500px - 6px) / var(--size));
+  width: calc((500px - 6px) / var(--size));
 }
 .cell-border {
   border: 1px solid #1e1e1e;
